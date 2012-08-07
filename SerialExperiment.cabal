@@ -1,0 +1,23 @@
+name:           SerialExperiment
+version:        0.1
+cabal-version:  >= 1.2
+build-type:     Simple
+author:         kostas
+
+executable SerialExperiment
+  hs-source-dirs:  src
+  main-is:         Main.hs
+  build-depends:   
+                   base >= 4,
+                   split,
+                   serialport,
+                   bytestring,
+                   stm,
+                   random,
+                   criterion
+  ghc-options:     -Wall
+  other-modules:   
+                   Serial,
+                   Geometry,
+                   Bezier
+
